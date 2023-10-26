@@ -1,10 +1,10 @@
 <mat-toolbar color="primary">
   <div class="main-buttons">
-    <button color="accent" mat-raised-button>Home</button>
-  <button color="accent" mat-raised-button>Posts</button>
-  <button color="accent" mat-raised-button>Login</button>
+    <a color="accent" mat-raised-button routerLink="/" routerLinkActive="active">Home</a>
+  <a color="accent" mat-raised-button routerLink="/posts" routerLinkActive="active">Posts</a>
+  <a color="accent" mat-raised-button routerLink="/login" routerLinkActive="active">Login</a>
   </div>
   <div class="profile-button">
-    <button color="accent" mat-raised-button>Profile</button>
+    <a color="accent" mat-raised-button routerLink="/profile" routerLinkActive="active">Profile</a>
   </div>
 </mat-toolbar>

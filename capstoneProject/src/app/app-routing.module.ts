@@ -4,6 +4,7 @@ import { HomePageComponent } from "./home-page/home-page.component";
 import { LoginPageComponent } from "./login-page/login-page.component";
 import { PostsPageComponent } from "./posts-page/posts-page.component";
 import { ProfilePageComponent } from "./profile-page/profile-page.component";
+import { SignUpPageComponent } from "./sign-up-page/sign-up-page.component";
 
 //Routes to each component page
 const routes: Routes = [
@@ -18,6 +19,9 @@ const routes: Routes = [
   },
   {
     path:'profile', component: ProfilePageComponent
+  },
+  {
+    path:'signup', component: SignUpPageComponent
   },
 ];
 
