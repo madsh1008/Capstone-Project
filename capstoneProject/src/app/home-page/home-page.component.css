@@ -1,0 +1,27 @@
+mat-card.top {
+  vertical-align: top;
+  display: inline-block;
+  height:500px;
+}
+
+mat-card.bottom {
+  margin:auto;
+  height:300px;
+}
+
+#video {
+  width: 60%;
+  background-color: antiquewhite;
+}
+
+#missionStatement {
+  width: 40%;
+  background-color: pink;
+}
+
+#signUp {
+  width: 30%;
+  background-color: lightblue;
+}
+
+
