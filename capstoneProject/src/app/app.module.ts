@@ -19,6 +19,10 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
 import { MatInputModule} from '@angular/material/input';
+import { AuthModule } from '@auth0/auth0-angular';
+import { environment as env } from '../environments/environment';
+import { LogoutPageComponent } from './logout-page/logout-page.component';
+import { LoadingComponent } from './loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +33,8 @@ import { MatInputModule} from '@angular/material/input';
     PostsPageComponent,
     HeaderComponent,
     FooterComponent,
+    LogoutPageComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
@@ -40,8 +46,14 @@ import { MatInputModule} from '@angular/material/input';
     MatIconModule,
     FormsModule,
     ReactiveFormsModule,
-    MatInputModule
-
+    MatInputModule,
+    AuthModule.forRoot ({
+        domain: 'dev-loztrkwf0xob70ia.us.auth0.com',
+        clientId: 'c4P7eEfYPgahv4ZTW2neZoCuCFI0KByI',
+        authorizationParams: {
+          redirect_uri: window.location.origin
+        }
+      }),
   ],
   providers: [],
   bootstrap: [AppComponent]

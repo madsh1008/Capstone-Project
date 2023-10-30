@@ -2,7 +2,8 @@
   <div class="main-buttons">
     <a color="accent" mat-raised-button routerLink="/" routerLinkActive="active">Home</a>
   <a color="accent" mat-raised-button routerLink="/posts" routerLinkActive="active">Posts</a>
-  <a color="accent" mat-raised-button routerLink="/login" routerLinkActive="active">Login</a>
+  <app-login-page *ngIf="(auth.isAuthenticated$ | async) === false"></app-login-page>
+  <app-logout-page *ngIf="auth.isAuthenticated$ | async"></app-logout-page>
   </div>
   <div class="profile-button">
     <a color="accent" mat-raised-button routerLink="/profile" routerLinkActive="active">Profile</a>
