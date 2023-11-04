@@ -11,6 +11,8 @@ import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { PostsPageComponent } from './posts-page/posts-page.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { LogoutPageComponent } from './logout-page/logout-page.component';
+import { LoadingComponent } from './loading/loading.component';
 
 //These are the imports for the angular material used
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -21,8 +23,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { MatInputModule} from '@angular/material/input';
 import { AuthModule } from '@auth0/auth0-angular';
 import { environment as env } from '../environments/environment';
-import { LogoutPageComponent } from './logout-page/logout-page.component';
-import { LoadingComponent } from './loading/loading.component';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { LoadingComponent } from './loading/loading.component';
           redirect_uri: window.location.origin
         }
       }),
+      MatGridListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

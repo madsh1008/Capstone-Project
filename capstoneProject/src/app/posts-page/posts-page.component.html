@@ -1,1 +1,31 @@
-<p>posts-page works!</p>
+<!-- Search bar -->
+<div class="search">
+  <mat-form-field id="inputBar">
+    <input matInput>
+  </mat-form-field>
+  <button mat-raised-button color="primary">Search</button>
+</div>
+
+<!-- grid that holds all of the posts -->
+<div class="posts">
+<mat-grid-list cols="1">
+  <mat-grid-tile>
+    <mat-card class="post">
+      <mat-card-header class="header">
+        <div mat-card-avatar class="avatar"></div> <!-- need to put an avatar in here -->
+        <mat-card-title class="title">
+          <p>User1</p> <!-- temporary content placeholder, will be from the posts array -->
+        </mat-card-title>
+      </mat-card-header>
+      <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> <!-- temporary content placeholder, will be from the posts array -->
+      <mat-card-content class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <!-- temporary content placeholder, will be from the posts array -->
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="accent">Interested</button>
+      </mat-card-actions>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
+</div>

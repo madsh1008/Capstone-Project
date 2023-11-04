@@ -1,0 +1,38 @@
+.search{
+  margin-top: 10px;
+  margin-left: 25%;
+}
+
+.search mat-form-field{
+  width: 70%;
+  padding-right: 2%;
+}
+
+.posts{
+  border-style: dashed;
+  border-color: black;
+}
+
+.header{
+  background-color: orange;
+}
+
+.content{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.title{
+  margin-top: 14%;
+}
+
+.avatar{
+  border-style: solid;
+  border-color: black;
+}
+
+.post {
+  border-style: dashed;
+  border-color: red;
+  width: 50%;
+}
