@@ -1,38 +1,57 @@
+/* centers search bar and gives space from the top */
 .search{
   margin-top: 10px;
   margin-left: 25%;
 }
 
+/* Sets size of the search bar and space from the search button */
 .search mat-form-field{
   width: 70%;
   padding-right: 2%;
 }
 
+/* Outlines posts area to visualize where things are placed, will remove later */
 .posts{
+  width: 50%;
   border-style: dashed;
   border-color: black;
 }
 
+/* Outlines each tile in the grid list to visualize the placement of things, will remove later */
+mat-grid-tile{
+  border-style:dotted;
+  border-color: red;
+}
+
+/* Sets background color of post heading */
 .header{
   background-color: orange;
 }
 
+/*Sets some space between the description and the interested button */
 .content{
-  margin-top: 2%;
-  margin-bottom: 2%;
+  margin-bottom: 3%;
 }
 
+/* Centers the Username with the picture */
 .title{
   margin-top: 14%;
 }
 
+/* adds a border around the avatar picture */
 .avatar{
   border-style: solid;
   border-color: black;
 }
 
+/* Sets size of post within grid tile */
 .post {
-  border-style: dashed;
-  border-color: red;
+  width: 80%;
+}
+
+/* Sets size and position of status button */
+.status {
   width: 50%;
+  position: relative;
+  bottom: 70px;
 }

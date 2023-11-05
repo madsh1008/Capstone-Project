@@ -24,6 +24,7 @@ import { MatInputModule} from '@angular/material/input';
 import { AuthModule } from '@auth0/auth0-angular';
 import { environment as env } from '../environments/environment';
 import {MatGridListModule} from '@angular/material/grid-list';
+import {MatChipsModule} from '@angular/material/chips';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
         }
       }),
       MatGridListModule,
+      MatChipsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
