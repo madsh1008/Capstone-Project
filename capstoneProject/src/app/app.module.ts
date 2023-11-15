@@ -26,6 +26,7 @@ import { environment as env } from '../environments/environment';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatChipsModule} from '@angular/material/chips';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +37,7 @@ import {MatChipsModule} from '@angular/material/chips';
     HeaderComponent,
     FooterComponent,
     LogoutPageComponent,
-    LoadingComponent
+    LoadingComponent,
   ],
   imports: [
     BrowserModule,
