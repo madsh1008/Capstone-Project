@@ -12,7 +12,8 @@
 
 /* Outlines posts area to visualize where things are placed, will remove later */
 .posts{
-  width: 50%;
+  width: 40%;
+  margin-left: 10%;
   border-style: dashed;
   border-color: black;
 }
@@ -29,9 +30,13 @@ mat-grid-tile{
 }
 
 /*Sets some space between the description and the interested button */
-.content{
+#description{
   margin-bottom: 3%;
 }
+
+/* #item{
+margin-top: %;
+} */
 
 /* Centers the Username with the picture */
 .title{
@@ -46,7 +51,7 @@ mat-grid-tile{
 
 /* Sets size of post within grid tile */
 .post {
-  width: 80%;
+  width: 60%;
 }
 
 /* Sets size and position of status button */
