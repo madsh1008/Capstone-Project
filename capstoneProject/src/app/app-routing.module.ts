@@ -6,6 +6,7 @@ import { PostsPageComponent } from "./posts-page/posts-page.component";
 import { ProfilePageComponent } from "./profile-page/profile-page.component";
 import { SignUpPageComponent } from "./sign-up-page/sign-up-page.component";
 import { AuthGuard } from "@auth0/auth0-angular";
+import { PostCreateComponent } from "./post-create/post-create.component";
 
 //Routes to each component page
 const routes: Routes = [
@@ -22,6 +23,9 @@ const routes: Routes = [
   },
   {
     path:'signup', component: SignUpPageComponent
+  },
+  {
+    path:'postcreate', component: PostCreateComponent
   },
 ];
 

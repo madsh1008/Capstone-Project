@@ -20,7 +20,36 @@
       <img mat-card-image src={{image}}> <!-- temporary content placeholder, will be from the posts array -->
       <button class="status" mat-flat-button color="primary">{{status}}</button>
       <mat-card-content class="content">
-        {{description}}
+        <div id="item">
+          <h1>{{item}}</h1>
+        </div>
+        <div id="description">
+          {{description}}
+        </div>
+        <!-- temporary content placeholder, will be from the posts array -->
+      </mat-card-content>
+      <mat-card-actions>
+        <button class="interested" mat-raised-button color="accent">Interested</button>
+      </mat-card-actions>
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-card class="post" multi="true">
+      <mat-card-header class="header">
+        <img mat-card-avatar class="avatar" src={{avatar}}> <!-- need to put an avatar in here -->
+        <mat-card-title class="title">
+          {{user}} <!-- temporary content placeholder, will be from the posts array -->
+        </mat-card-title>
+      </mat-card-header>
+      <img mat-card-image src={{image}}> <!-- temporary content placeholder, will be from the posts array -->
+      <button class="status" mat-flat-button color="primary">{{status}}</button>
+      <mat-card-content class="content">
+        <div id="item">
+          <h1>{{item}}</h1>
+        </div>
+        <div id="description">
+          {{description}}
+        </div>
         <!-- temporary content placeholder, will be from the posts array -->
       </mat-card-content>
       <mat-card-actions>
