@@ -9,3 +9,14 @@ mat-toolbar {
   display: flex;
   justify-content: space-between;
 }
+
+.welcome {
+  text-align: left;
+  display: flex;
+  margin-right: 20px;
+  font-size: 15px;
+}
+
+.wrap {
+  display: flex
+}
