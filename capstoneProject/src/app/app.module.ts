@@ -27,6 +27,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatChipsModule} from '@angular/material/chips';
 import { PostCreateComponent } from './post-create/post-create.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,6 +40,7 @@ import { PostCreateComponent } from './post-create/post-create.component';
     LogoutPageComponent,
     LoadingComponent,
     PostCreateComponent
+
   ],
   imports: [
     BrowserModule,
