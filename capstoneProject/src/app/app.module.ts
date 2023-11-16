@@ -26,6 +26,7 @@ import { environment as env } from '../environments/environment';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatChipsModule} from '@angular/material/chips';
 import { PostCreateComponent } from './post-create/post-create.component';
+import {MatSelectModule} from '@angular/material/select';
 
 
 @NgModule({
@@ -62,6 +63,7 @@ import { PostCreateComponent } from './post-create/post-create.component';
       }),
       MatGridListModule,
       MatChipsModule,
+      MatSelectModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
