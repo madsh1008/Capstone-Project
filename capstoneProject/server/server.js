@@ -14,6 +14,29 @@ async function connect() {
     }
 }
 
+//hooking post to database
+// app.use(bodyParser.json());
+
+const Post = mongoose.model('Post', {
+  post_title: String,
+  description: String,
+  pictures: String,
+  trade_status: String,
+  free_status: String
+});
+
+app.post('/api/posts', (req, res) => {
+  const newPost = new Post(req.body);
+
+  newPost.save((err, post) => {
+    if (err) {
+      return res.status(500).send(err);
+    }
+
+    return res.status(201).json({ message: 'Post added successfully', post });
+  });
+});
+
 connect();
 
 app.get('/', (req, res) => res.send('Hello World!'))
