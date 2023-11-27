@@ -10,22 +10,43 @@ import { Post } from '../post.model';
 })
 export class PostCreateComponent {
 
+  postFormValue: Post = {
+    post_title: '',
+    description: '',
+    pictures: '',
+    trade_status: 'available',
+    free_status: ''
+  };
+
   constructor(public service: PostService, public fb: FormBuilder){
 
   }
+
+  postForm: any;
 
   onAddPost(form: NgForm){
     if (form.invalid) {
       return;
     }
 
-    this.service.AddPost(
-      form.value.post_title,
-      form.value.description,
-      form.value.pictures,
-      form.value.trade_status,
-      form.value.free_status
-    )
+    const newPost: Post = {
+      post_title: form.value.post_title,
+      description: form.value.description,
+      pictures: form.value.pictures,
+      trade_status: form.value.trade_status,
+      free_status: form.value.free_status
+    };
+
+    this.service.addPost(newPost);
+
+
+    // this.service.addPost(
+    //   form.value.post_title,
+    //   form.value.description,
+    //   form.value.pictures,
+    //   form.value.trade_status,
+    //   form.value.free_status
+    // )
     form.resetForm()
   }
 

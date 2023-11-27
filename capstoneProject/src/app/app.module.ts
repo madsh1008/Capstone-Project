@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //These are the imports for each of the main components
 import { AppRoutingModule } from './app-routing.module';
@@ -45,6 +47,7 @@ import {MatSelectModule} from '@angular/material/select';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     MatToolbarModule,
     MatButtonModule,
@@ -64,6 +67,7 @@ import {MatSelectModule} from '@angular/material/select';
       MatGridListModule,
       MatChipsModule,
       MatSelectModule,
+      HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

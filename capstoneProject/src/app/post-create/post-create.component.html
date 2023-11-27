@@ -1,29 +1,29 @@
-<form class="postForm">
+<form class="postForm" (submit)="onAddPost(postForm)" #postForm="ngForm">
   <section>
     <h1>Create Post</h1>
   </section>
-  <mat-form-field id="item">
+  <mat-form-field id="post_title">
     <mat-label>Item</mat-label>
-    <input matInput>
+    <input matInput name="post_title" [(ngModel)]="postFormValue.post_title" required #post_title="ngModel">
   </mat-form-field>
   <mat-form-field id="description">
     <mat-label>Description</mat-label>
-    <textarea matInput></textarea>
+    <textarea matInput name="description" [(ngModel)]="postFormValue.description" required #description="ngModel"></textarea>
   </mat-form-field>
-  <mat-form-field id="images">
+  <mat-form-field id="pictures">
     <mat-label>Image(s)</mat-label>
     <!-- placeholder input, more research needed on image -->
-    <input matInput>
+    <input matInput name="pictures" [(ngModel)]="postFormValue.pictures" required #pictures="ngModel">
   </mat-form-field>
   <mat-form-field id="tradeStatus">
     <mat-label>Trade Status</mat-label>
-    <mat-select>
+    <mat-select name="trade_status" [(ngModel)]="postFormValue.trade_status" required>
       <mat-option value="available">Available</mat-option>
       <mat-option value="pending">Pending</mat-option>
       <mat-option value="traded">Traded</mat-option>
     </mat-select>
   </mat-form-field>
-  <button mat-fab extended>
+  <button type="submit" mat-fab extended>
     Publish
   </button>
 

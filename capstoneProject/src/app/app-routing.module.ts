@@ -25,7 +25,7 @@ const routes: Routes = [
     path:'signup', component: SignUpPageComponent
   },
   {
-    path:'postcreate', component: PostCreateComponent
+    path:'post-create', component: PostCreateComponent
   },
 ];
 
