@@ -1,7 +1,7 @@
 mat-toolbar {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  border-bottom: 4px solid black;
 }
 
 .main-buttons {
@@ -11,12 +11,35 @@ mat-toolbar {
 }
 
 .welcome {
-  text-align: left;
+  width: 15%;
   display: flex;
-  margin-right: 20px;
-  font-size: 15px;
+  justify-content: right;
+  float: right;
+  font-size: 20px;
+  font-family: Graphik;
+  text-align: right;
+  display: block;
+  width:140%;
+
 }
 
 .wrap {
   display: flex
 }
+
+.profile-button {
+  width: 15%;
+  display: flex;
+  position: static;
+  justify-content: right;
+  float: right;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+#popup {
+  float: right;
+}
+

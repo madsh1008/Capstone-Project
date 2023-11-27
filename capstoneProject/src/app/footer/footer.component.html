@@ -1,5 +1,9 @@
-<mat-toolbar color="primary" style="height: 100px;">
+<mat-toolbar color="accent" style="height: 100px;">
   <div class="logo">
-    <h1>LOGO</h1>
+    <img src="https://i.postimg.cc/90RBV9wY/temp-Image-KISn-FW.jpg" width="80px" height="80px" alt="Tiger Trade logo">
+  </div>
+  <div class="popup" *ngIf="(auth.isAuthenticated$ | async) === false">
+    <a color="primary" mat-raised-button ONCLICK="alert('New users to Tiger Trade must verify their email first before logging in after sign up. Thank you.')">New Users</a>
   </div>
 </mat-toolbar>
+

@@ -3,17 +3,24 @@ mat-toolbar {
   left: 0px;
   right: 0px;
   bottom: 0px;
+  border-top: 4px solid #000000;
 }
 
 .logo {
-  width: 70px;
-  height: 70px;
-  border-radius: 40px;
-  border-style: solid;
-  border-color: black;
+  border-radius: 160px;
+  
 }
 
-h1 {
-  padding-top: 25%;
+img {
+  padding-top: 30%;
+  padding-bottom: 25%;
   padding-left: 13%;
+}
+
+.popup {
+  width: 95%;
+  display: flex;
+  position: static;
+  justify-content: right;
+  float: right;
 }

@@ -1,3 +1,4 @@
+<body>
 <form class="postForm" (submit)="onAddPost(postForm)" #postForm="ngForm">
   <section>
     <h1>Create Post</h1>
@@ -23,7 +24,9 @@
       <mat-option value="traded">Traded</mat-option>
     </mat-select>
   </mat-form-field>
-  <button type="submit" mat-fab extended>
+  <button color="primary" type="submit" mat-fab extended>
     Publish
   </button>
+  </form>
+</body>
 
