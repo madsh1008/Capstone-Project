@@ -7,7 +7,7 @@
 .search mat-form-field{
   width: 70%;
   padding-right: 2%;
-  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /* Outlines posts area to visualize where things are placed, will remove later */
@@ -15,32 +15,42 @@
   height: 100vh;
   width: 40%;
   overflow: auto;
-  border: 6px solid black;
-  padding:2%;
+  padding-left: 2%;
+  padding-right: 2.5%;
+  border-left: 6px solid black;
+  border-right: 6px solid black;
+  border-top: 6px solid black;
   background-color: #f1b82d;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: auto 0;
+  margin-top: auto;
+  display: block;
+  padding-top: 2%;
   
 }
 
 /* Outlines each tile in the grid list to visualize the placement of things, will remove later */
 mat-grid-tile{
-  border-style:dotted;
-  border-color: black;
+  
   justify-content: center;
   display: flex;
+  border: 2px solid black;
   
 }
 
 /* Sets background color of post heading */
 .header{
-  background-color: orange;
+  background-color: white;
+  border: 3px solid black;
+  height: 11%;
 }
 
 /*Sets some space between the description and the interested button */
 #description{
   margin-bottom: 3%;
+
 }
 
 /* #item{
@@ -50,6 +60,8 @@ margin-top: %;
 /* Centers the Username with the picture */
 .title{
   margin-top: 14%;
+  font-family: Graphik;
+  font-size: 20px;
 }
 
 /* adds a border around the avatar picture */
@@ -60,7 +72,8 @@ margin-top: %;
 
 /* Sets size of post within grid tile */
 .post {
-  width: 90%;
+  height:100%;
+  width: 100%;
   
 }
 
@@ -80,7 +93,7 @@ body {
   background-repeat: no-repeat;
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: 105vh;
   width: 100%;
 
 }
@@ -90,4 +103,37 @@ body {
   margin-left: auto;
   margin-right: auto;
   display: inline-block;
+}
+
+#tiger1 {
+  width: 15%;
+  height: 100%;
+  background-image: url('https://i.postimg.cc/xdXRzCY4/temp-Image-I0q-EOM.jpg');
+  float: left;
+  color: #f1b82d;
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#tiger2 {
+  width: 15%;
+  height: 100%;
+  background-image: url('https://i.postimg.cc/xdXRzCY4/temp-Image-I0q-EOM.jpg');
+  float: right;
+  color: #f1b82d;
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.item {
+  border: 2px solid black;
+}
+
+#header {
+  background-color: black;
+  border-bottom: 2px solid #f1b82d;
+  border-top: 2px solid #f1b82d;
+  height: 12%;
 }

@@ -1,3 +1,22 @@
 <body>
+    <div *ngIf="auth.user$ | async as user">
+        <mat-card id="top">
+            <mat-card-content>
+                        
+                <img [src]="user.picture" alt="User's profile picture"
+                class="rounded-circle img-fluid profile-picture"/>
+                <h2>{{ user.nickname }}</h2>
+                <p>Interested in trading? Contact me at:</p>
+                <p class="lead text-muted">{{ user.email }}</p>
+            </mat-card-content>
+        </mat-card>
+                <mat-card id="header">
+                    <mat-card-content>
+                    </mat-card-content>
+                  </mat-card>
+                <div class="bottom">
+
+                </div>
+    </div>
     
 </body>

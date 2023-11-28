@@ -1,4 +1,17 @@
 <body>
+
+  <mat-card id="tiger3">
+    <h2></h2>
+    <mat-card-content>
+    </mat-card-content>
+  </mat-card>
+  
+  <mat-card id="tiger4">
+    <h2></h2>
+    <mat-card-content>
+    </mat-card-content>
+  </mat-card>
+
 <form class="postForm" (submit)="onAddPost(postForm)" #postForm="ngForm">
   <section>
     <h1>Create Post</h1>
@@ -24,7 +37,7 @@
       <mat-option value="traded">Traded</mat-option>
     </mat-select>
   </mat-form-field>
-  <button color="primary" type="submit" mat-fab extended>
+  <button class="btn" color="primary" type="submit" mat-fab extended>
     Publish
   </button>
   </form>
