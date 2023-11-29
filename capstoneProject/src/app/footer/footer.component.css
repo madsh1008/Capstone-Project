@@ -19,9 +19,10 @@ img {
 }
 
 .popup {
-  width: 95%;
+  width: 99%;
   display: flex;
   position: static;
   justify-content: right;
   float: right;
 }
+

@@ -3,13 +3,16 @@ body {
 }
 
 #header {
-    background-image: url('https://i.postimg.cc/xdXRzCY4/temp-Image-I0q-EOM.jpg');
+    background-color:#f1b82d;
     background-size: cover;
     background-repeat: no-repeat;
     width:100%;
-    height:40%;
+    height:5%;
     border-top: 2px solid #f1b82d;
-    border-bottom: 2px solid #f1b82d
+    border-bottom: 2px solid #f1b82d;
+    display: inline-block;
+    border-bottom: 2px solid black;
+
 
 }
 
@@ -25,3 +28,26 @@ body {
 #bottom {
     overflow: auto;
 }
+
+.side1 {
+    display: inline-block;
+    padding-right: 3%;
+}
+
+.side2 {
+    display: inline-block;
+    padding-left: 3%;
+    padding-bottom: 2%;
+}
+
+.img2 {
+    height:100px;
+    width:150px;
+    padding-left:9px;
+}
+
+.img3 {
+    height: 150px;
+    width: 220px;   
+}
+

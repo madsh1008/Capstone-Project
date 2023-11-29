@@ -1,4 +1,7 @@
 <mat-toolbar color="primary">
+  <div class="logo">
+    <img src="https://i.postimg.cc/90RBV9wY/temp-Image-KISn-FW.jpg" width="80px" height="80px" alt="Tiger Trade logo">
+  </div>
   <div class="main-buttons">
     <a color="accent" mat-raised-button [hidden]="(auth.isAuthenticated$ | async) === false" routerLink="/" routerLinkActive="active">Home</a>
   <a color="accent" mat-raised-button [hidden]="(auth.isAuthenticated$ | async) === false" routerLink="/posts" routerLinkActive="active">Posts</a>

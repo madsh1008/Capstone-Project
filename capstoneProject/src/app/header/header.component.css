@@ -2,12 +2,14 @@ mat-toolbar {
   display: flex;
   justify-content: space-between;
   border-bottom: 4px solid black;
+  padding-top: 5px;
 }
 
 .main-buttons {
   width: 15%;
   display: flex;
   justify-content: space-between;
+  padding-left: 2%;
 }
 
 .welcome {
@@ -41,5 +43,12 @@ a:link {
 
 #popup {
   float: right;
+}
+
+
+img {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
 }
 
