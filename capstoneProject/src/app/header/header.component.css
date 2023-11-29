@@ -6,7 +6,7 @@ mat-toolbar {
 }
 
 .main-buttons {
-  width: 15%;
+  width: 45%;
   display: flex;
   justify-content: space-between;
   padding-left: 2%;

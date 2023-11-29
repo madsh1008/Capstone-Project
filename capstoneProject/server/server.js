@@ -45,5 +45,13 @@ app.post('/api/posts', (req, res) => {
 
 connect();
 
-app.get('/', (req, res) => res.send('Hello World!'))
+app.get('/api/posts', async (req, res) => {
+  try{
+    const posts = await Post.find();
+    res.status(200).json({message: 'Posts have been fetched', posts});
+  } catch (error) {
+    console.error('Error fetching posts:', error);
+    res.status(500).json({message: 'Internal server error', error});
+  }
+});
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))

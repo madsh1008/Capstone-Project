@@ -24,7 +24,7 @@ export class PostService {
 
   addPost(post:Post) {
     const newPost: Post = { ...post, post_id: uuid4() };
-    this.http.post<{message: String, post: Post }>('http://localhost:3000/api/posts', post)
+    this.http.post<{message: string, post: Post }>('http://localhost:3000/api/posts', newPost)
       .subscribe(response => {
         console.log(response.message);
         this.posts.push(response.post);
@@ -33,6 +33,15 @@ export class PostService {
       error => {
         console.error('Error adding post:', error);
       });
+  }
+
+  //Fetches info from the database
+  getPost(){
+    this.http.get<{message: string, posts: Post[]}>('http://localhost:3000/api/posts')
+    .subscribe((postData)=>{
+      this.posts = postData.posts;
+      this.postUpDate.next([...this.posts])
+    });
   }
 
 }
