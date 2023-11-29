@@ -10,8 +10,10 @@ body {
     height:5%;
     border-top: 2px solid #f1b82d;
     border-bottom: 2px solid #f1b82d;
-    display: inline-block;
     border-bottom: 2px solid black;
+    position:middle;
+    text-align: center;
+    display: inline-block;
 
 
 }
