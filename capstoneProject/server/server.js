@@ -3,6 +3,8 @@ const mongoose = require("mongoose");
 const app = express()
 const port = 3000
 
+const cors = require('cors');
+
 const uri = "mongodb+srv://TigerTrade:MizzouTigers77!!@tigertrade.uhrunzt.mongodb.net/?retryWrites=true&w=majority";
 
 async function connect() {
@@ -15,7 +17,9 @@ async function connect() {
 }
 
 //hooking post to database
-// app.use(bodyParser.json());
+app.use(express.json());
+
+app.use(cors());
 
 const Post = mongoose.model('Post', {
   post_title: String,
@@ -28,12 +32,14 @@ const Post = mongoose.model('Post', {
 app.post('/api/posts', (req, res) => {
   const newPost = new Post(req.body);
 
-  newPost.save((err, post) => {
-    if (err) {
-      return res.status(500).send(err);
-    }
+  console.log('Received POST request with data:', newPost);
 
+  newPost.save()
+  .then(post => {
     return res.status(201).json({ message: 'Post added successfully', post });
+  })
+  .catch(err => {
+    return res.status(500).send(err);
   });
 });
 

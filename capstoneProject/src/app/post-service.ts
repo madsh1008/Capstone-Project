@@ -3,6 +3,7 @@ import {Post} from './post.model';
 import { HttpClient } from '@angular/common/http';
 import { Subject } from 'rxjs';
 import { map } from 'rxjs';
+import { v4 as uuid4 } from 'uuid';
 
 @Injectable({
   providedIn: 'root'
@@ -21,22 +22,9 @@ export class PostService {
 
   // adds post info to the database
 
-  // addPost(post_title:string, description:string, pictures:File, trade_status:string, free_status:string){
-  //   const post: Post = {
-  //     // post_id: post_id,
-  //     // user_id: user_id,
-  //     post_title: post_title,
-  //     description: description,
-  //     pictures: pictures,
-  //     trade_status: trade_status,
-  //     free_status: free_status
-  //   }
-  //   this.posts.push(post);
-  //   this.postUpDate.next([...this.posts]);
-  // }
-
   addPost(post:Post) {
-    this.http.post<{message: String, post: Post }>('/api/posts', post)
+    const newPost: Post = { ...post, post_id: uuid4() };
+    this.http.post<{message: String, post: Post }>('http://localhost:3000/api/posts', post)
       .subscribe(response => {
         console.log(response.message);
         this.posts.push(response.post);

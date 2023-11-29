@@ -11,6 +11,7 @@ import { Post } from '../post.model';
 export class PostCreateComponent {
 
   postFormValue: Post = {
+    post_id: '',
     post_title: '',
     description: '',
     pictures: '',
@@ -30,12 +31,15 @@ export class PostCreateComponent {
     }
 
     const newPost: Post = {
+      post_id: '',
       post_title: form.value.post_title,
       description: form.value.description,
       pictures: form.value.pictures,
       trade_status: form.value.trade_status,
       free_status: form.value.free_status
     };
+
+    console.log('Sending POST request with data:', newPost);
 
     this.service.addPost(newPost);
 
